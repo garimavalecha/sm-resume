@@ -1,4 +1,4 @@
-const studentdetail = {
+/* const studentdetail = {
     first_Name :null,
     last_Name :  null,
     status : null,
@@ -81,7 +81,7 @@ const studentdetail = {
     }]
 };
 
-
+*/
 
 
 
