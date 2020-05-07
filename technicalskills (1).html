@@ -1,0 +1,865 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.5/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="technical.css">
+</head>
+
+<body>
+    <!--Basic Info-->
+    <div class="wrapper collapse side-menu ">  
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">garimavalecha4@gmail.com</div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#basic-info" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-user"></i></span><span class="title">Basic Info</span></a>
+                </li>
+                <li>
+                    <a href="#career" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-bookmark"></i></span><span class="title">Career Objective</span></a>
+                </li>
+                <li>
+                    <a href="#academic" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-graduation-cap"></i></span><span class="title">Academic Qualification</span></a>
+                </li>
+                <li>
+                    <a href="#internships" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-briefcase"></i></span><span class="title"> Internships</span></a>
+                </li>
+                <li>
+                    <a href="#technicalskills" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-cog"></i></span><span class="title">Technical Skills</span> </a>
+                </li>
+                <li>
+                    <a href="#awards" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-trophy"></i></span><span class="title">Awards and Certifications</span></a>
+                </li>
+                <li>
+                    <a href="#projects" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-desktop"></i></span><span class="title">Projects</span></a>
+                </li>
+                <li>
+                    <a href="#workshops" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-wrench"></i></span><span class="title">Workshops Attended</span></a>
+                </li>
+                <li>
+                    <a href="#hobbies" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-cubes"></i></span><span class="title">Hobbies</span></a>
+                </li>
+                <li>
+                    <a href="#add-info" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-plus-circle"></i></span><span class="title">Additional Info</span></a>
+                </li>
+                <li>
+                    <a href="#per-info" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-info-circle"></i></span><span class="title">Personal Details</span></a>
+                </li>
+                <li>
+                    <a href="#agree" onclick="sideDisplayChange()"><span class="icon"><i class="fa fa-check-square-o"></i></span><span class="title">Agreement</span></a>
+                </li>
+
+            </ul>
+        </div>
+        
+        <div class="column item main_container">
+            <div class="container sidenav" id="basic-info" style="display: block;">
+                <div class="hero is-link">
+                    <h3 class="title has-text-centered ">
+                        DESCRIPTION
+                    </h3>
+                    <p class="subtitle has-text-centered">
+                        Your name, designation, address, contact number, e-mail id, some description about yourself.
+                    </p>
+                </div>
+                <div class="form">
+                    <form action="" method="POST" id="basic">
+                        <div class="field">
+                            <label class="label">First Name* :</label>
+                            <div class="control">
+                                <input class="input column " type="text" name="first_name" placeholder="First Name" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Last Name* :</label>
+                            <div class="control">
+                                <input class="input" type="text" name="last_name" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Status</label>
+                            <div class="control">
+                                <input class="input" type="text" name="status_deignation" placeholder="eg:Student at DSCE">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Email* :</label>
+                            <div class="control">
+                                <input class="input" type="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Mobile Number* :</label>
+                            <div class="field-body">
+                                <div class="field is-expanded">
+                                    <div class="field has-addons">
+                                        <p class="control">
+                                            <a class="button is-static">
+                                                +91
+                                            </a>
+                                        </p>
+                                        <p class="control is-expanded">
+                                            <input class="input" type="tel" name="mobile" placeholder="Your phone number" required>
+                                        </p>
+                                    </div>
+                                    <p class="help">Do not enter the first zero</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="field">
+                            <label class="label">Profile Summary</label>
+                            <div class="control">
+                                <textarea class="textarea" name="profile_summary" placeholder="Give a brief description about yourself"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link" type="submit">Save</button>
+                            </div>
+                            <!-- <div class="control">
+                            <button class="button is-link is-light">Cancel</button>
+                        </div> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+
+            <!--End of Basic Info-->
+
+
+
+            <!--Career Objective-->
+            <div class="container sidenav" id="career" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered ">
+                        Career Objective
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+            
+            <div class="form">
+                <form>
+                    <div class="field">
+                        <label class="label">Career Objective* :</label>
+                        <div class="control">
+                            <textarea class="textarea" name="career_objective" placeholder="Textarea" required></textarea>
+                        </div>
+                    </div>
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button class="button is-link" >Save</button>
+                        </div>
+                        <!-- <div class="control">
+                    <button class="button is-link is-light">Cancel</button>
+                    </div> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+            <!--end of career objective-->
+
+            <!--Academic Qualification-->
+            
+            <div class="container sidenav" id="academic" style="display: none;">
+                <div class="hero is-link">
+                    <h3 class="title has-text-centered ">
+                       Academic Qualification
+                    </h3>
+                    <p class="subtitle has-text-centered">
+                        Your name, designation, address, contact number, e-mail id, some description about yourself.
+                    </p>
+                </div>
+                <div id="navbarBasicExample form" class="navbar-menu is-active form">
+                    <ul class="navbar-start">
+                        <li class="navbar-item nav-ten-form">
+                            <a href="#ten-form" onclick="displayChange()">10th</a>
+                        </li>
+
+                        <li class="navbar-item nav-twelve-form">
+                            <a href="#twelve-form" onclick="displayChange()">12th</a>
+                        </li>
+                        <li class="navbar-item nav-twelve-form">
+                            <a href="#diploma-form" onclick="displayChange()">Diploma</a>
+                        </li>
+                        <li class="navbar-item nav-twelve-form">
+                            <a href="#ug-form" onclick="displayChange()">UG</a>
+                        </li>
+                        <li class="navbar-item nav-twelve-form">
+                            <a href="#pg-form" onclick="displayChange()">PG</a>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+
+                <div id="ten-form" style="display:block" class="display-form  form">
+                    <form>
+                        <div class="field">
+                            <label class="label">10th Percentage/GPA* :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Your 10th percentage or GPA" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">10th Board* :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="eg:ICSE Board" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">10th Institution* :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="10th Institution" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">10th Year of Passing* :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="eg:2015" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="twelve-form" style="display: none;" class="display-form  form">
+                    <form>
+                        <div class="field">
+                            <label class="label">PU/12th Percentage* :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Your PU/12th percentage" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">PU/12th Board* :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="eg:CBSE Board" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">PU/12th Institution* :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="PU/12th Institution" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">PU/12th Year of Passing* :</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="eg:2015" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="diploma-form" style="display: none;" class="display-form  form">
+                    <form>
+                        <div class="field">
+                            <label class="label">Diploma Percentage or GPA*:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Your Diploma percentage or GPA" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Diploma Board*:</label>
+                            <div class="control">
+                                <input class="input" type="text"
+                                    placeholder="eg:Andhra Pradesh - Board of Technical Education" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Diploma Institution*:</label>
+                            <div class="control">
+                                <input class="input" name="" type="text" placeholder="Diploma Institution" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Diploma Year of Passing*:</label>
+                            <div class="control">
+                                <input class="input" name="" type="text" placeholder="eg:2015" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="ug-form" style="display: none;" class="display-form  form">
+                    <form>
+                        <div class="field">
+                            <label class="label">UG Course*:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Bachelor of Hotel Management" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">UG Branch:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="None">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">UG University*:</label>
+                            <div class="control">
+                                <input class="input" type="text"
+                                    placeholder="eg:APJ Abdul Kalam Technological University" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">UG Institution:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="UG Institution" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">UG Percentage or GPA*:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Your UG Percentage or GPA" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">UG Year of Passing*:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="eg:1990" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="pg-form" style="display: none;" class="display-form  form">
+                    <form>
+                        <div class="field">
+                            <label class="label">PG Course*:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Master of Health Science (M.H.Sc)"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">PG Branch:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="None">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">PG University*:</label>
+                            <div class="control">
+                                <input class="input" type="text"
+                                    placeholder="eg:APJ Abdul Kalam Technological University" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">PG Institution:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="PG Institution" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">PG Percentage or GPA*:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="Your PG Percentage or GPA" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">PG Year of Passing*:</label>
+                            <div class="control">
+                                <input class="input" type="text" placeholder="eg:1990" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end of academic qualification-->
+
+
+            <!--Internships-->
+            <div class="container sidenav" id="internships" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered">
+                        Internships
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+                <div class="form">
+                    <form>
+                        <div id="div1">
+                            <div class="field">
+                                <label class="label">Organisation Name*:</label>
+                                <div class="control">
+                                    <input class="input" name="company_name" type="text" placeholder="The Organisation Name" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Project Under Taken*:</label>
+                                <div class="control">
+                                    <input class="input" type="text" name="project_undertaken" placeholder="Project Under Taken" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Technology Used and Description*:</label>
+                                <div class="control">
+                                    <textarea class="textarea" name="description" placeholder="Technology Used and Description"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Responsibility and Duration*:</label>
+                                <div class="control">
+                                    <textarea class="textarea" name="res-dur" placeholder="Responsibility and Duration"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="removeInternship()" required>Remove</button>
+                            </div>
+                        </div>
+                        <div class="field is-grouped button-gap">
+                            <div class="control ">
+                                <button class="button is-link">Save</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link">Skip</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="addNewInternship()">Add Another</button>
+                            </div>
+                        </form>
+                    </div>
+                </div> 
+            </div>
+            <!--end of internships-->
+
+
+            <!-- Technical Skills-->
+            <div class="container sidenav" id="technicalskills" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered ">
+                        Technical Skills
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+                <div class="form">
+                    <form>
+                        <div id="div2">
+                            <div class="field">
+                                <label class="label">Skill* :</label>
+                                <div class="control">
+                                    <input class="input" name="skill" type="text" placeholder="eg:Python" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Level* :</label>
+                                <div class="control">
+                                    <input class="input" name="level" type="text" placeholder="eg:Beginner" required>
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                    </span>
+                                    <span class="icon is-small is-right">
+                                        <i class="fas fa-check"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="removeSkill()">Remove</button>
+                            </div>
+                            <br/>
+                        </div>
+                        <div class="field is-grouped button-gap">
+                            <div class="control">
+                                <button class="button is-link">Save</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link">Skip</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="addNewSkill()">Add Another</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end of technical skills-->
+
+
+
+            <!--awards and certificates-->
+            <div class="container sidenav" id="awards" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered ">
+                        Awards and Certifications
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+                <div class="form">
+                    <form>
+                        <div id="div3">
+                            <div class="field">
+                                <label class="label">Awards and Certifications*:</label>
+                                <div class="control">
+                                    <textarea class="textarea" required name=="awards"
+                                        placeholder="Your achievements and Certifications(enter the link to Certifications if available)"></textarea>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="removeAward()">Remove</button>
+                            </div>
+                        </div>
+                        <div class="field is-grouped button-gap">
+                            <div class="control">
+                                <button class="button is-link">Save</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link">Skip</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="addNewAward()">Add Another</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--end of awards and certificates-->
+
+
+            <!--projects-->
+            <div class="container sidenav " id="projects" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered ">
+                        Projects
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+                <div class="form">
+                    <form>
+                        <div id="div4">
+                            <div class="field">
+                                <label class="label">Project Title*:</label>
+                                <div class="control">
+                                    <input class="input" nam="title" type="text" placeholder="Title of the Project" required>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Summary of Project*:</label>
+                                <div class="control">
+                                    <textarea class="textarea" name="summary" placeholder="Technology Used and Description"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Team Size,Roles and Duration*:</label>
+                                <div class="control">
+                                    <textarea class="textarea" name="team_size" placeholder="Team Size,Roles and Duration"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Project Link:</label>
+                                <div class="control">
+                                    <input class="input" type="text" name="link"
+                                        placeholder="Link to the repository where the project is stored(optional)">
+                                </div>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="removeProject()">Remove</button>
+                            </div>
+                        </div>
+                        <div class="field is-grouped button-gap">
+                            <div class="control">
+                                <button class="button is-link">Save</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link">Skip</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="addNewProject()">Add Another</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end of projects-->
+
+
+            <!--workshops-->
+            <div class="container sidenav" id="workshops" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered ">
+                        Workshops
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+                <div class="form">
+                    <form>
+                        <div id="div5">
+                            <div class="field">
+                                <label class="label">Workshops / Seminars / Trainings Attended*:</label>
+                                <div class="control">
+                                    <input class="input" name="workshop" type="text" placeholder="Workshops / Seminars / Trainings Attended"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="removeWorkshop()">Remove</button>
+                            </div>
+                        </div>
+                        <div class="field is-grouped button-gap">
+                            <div class="control">
+                                <button class="button is-link">Save</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link">Skip</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="addWorkshop()">Add Another</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end of workshops-->
+
+
+            <!--hobbies-->
+            <div class="container sidenav" id="hobbies" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered ">
+                        Hobbies
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+                <div class="form">
+                    <form>
+                        <div id="div6">
+                            <div class="field">
+                                <label class="label">Hobbies :</label>
+                                <div class="control">
+                                    <input class="input" name="hobbies" type="text" placeholder="Your Hobbies">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field is-grouped button-gap">
+                            <div class="control">
+                                <button class="button is-link">Save</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link">Skip</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end of hobbies-->
+
+            <!--additional information-->
+            <div class="container sidenav" id="add-info" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered ">
+                        Additional information
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+                <div class="form">
+                    <form>
+                        <div id="div7">
+                            <div class="field">
+                                <label class="label">Title :</label>
+                                <div class="control">
+                                    <input class="input" name="title" type="text" placeholder="Title">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label class="label">Description :</label>
+                                <div class="control">
+                                    <textarea class="textarea"  name="description" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="removeInfo()">Remove</button>
+                            </div>
+                        </div>
+                        <div class="field is-grouped button-gap">
+                            <div class="control">
+                                <button class="button is-link">Save</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link">Skip</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link" onclick="addInfo()">Add Another</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end of additional information-->
+
+
+            <!--personal details-->
+            <div class="container sidenav" id="per-info" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered ">
+                        Personal details
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+                <div id="div8" class="form">
+                    <form>
+                        <div class="field">
+                            <label class="label">USN* :</label>
+                            <div class="control">
+                                <input class="input" name="usn" type="text" placeholder="USN" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Date of Birth* :</label>
+                            <input class="input" type="date" name="dob" required>
+                        </div>
+                        <div class="field">
+                            <label class="label">Gender* :</label>
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="gender">
+                                    Male
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="gender">
+                                    Female
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="gender">
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Mother's Name* :</label>
+                            <div class="control">
+                                <input class="input" name="mother_name" type="text" placeholder="Mother's Name" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Father's Name* :</label>
+                            <div class="control">
+                                <input class="input" name="father_name" type="text" placeholder="Father's Name" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Present Address* :</label>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Present Address" name="present_address"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Permanent Address* :</label>
+                            <input type="checkbox" name="permanent_address" onclick="fillPermanent(this.form)">
+                            <em>Check this box if Permanent Address and Present Address are the same.</em>
+                            <div class="control">
+                                <textarea class="textarea" placeholder="Permanent Address" name="permanent_address"
+                                    required></textarea>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">PAN Card No :</label>
+                            <div class="control">
+                                <input class="input" name="pan_no" type="text" placeholder="PAN No" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Passport No :</label>
+                            <div class="control">
+                                <input class="input" type="text" name="passport_no" placeholder="Passport No" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Aadhar No* :</label>
+                            <div class="control">
+                                <input class="input" name="aadhaar_no" type="text" placeholder="Aadhar No" required>
+                            </div>
+                        </div>
+                        <div class="field is-grouped button-gap">
+                            <div class="control">
+                                <button class="button is-link">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--end of personal details-->
+
+            <!--agreement-->
+            <div class="container sidenav" id="agree" style="display: none;">
+                <div class="hero is-link">
+                    <h1 class="title has-text-centered ">
+                        Agreement
+                    </h1>
+                    <p class="subtitle has-text-centered">
+                        Describe your goals, interests and what you are pursuing and doing currently.
+                    </p>
+                </div>
+                <div id="div8" class="form">
+                    <form>
+                        <div class="field">
+                            <div class="control">
+                                <input type="checkbox" name="agreement" required>
+                                I hereby declare that the information given by me is true to the best of my knowledge.
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Date of Agreement* :</label>
+                            <input class="input" type="date" name="doa" required>
+                        </div>
+                        <div class="field">
+                            <label class="label">Place* :</label>
+                            <div class="control">
+                                <input class="input" type="text" name="place" placeholder="Place" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Choose a template* :</label>
+                            <div class="control">
+                                <label class="radio">
+                                    <input type="radio" name="question" required>
+                                    Default
+                                </label>
+                            </div>
+                        </div>
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button class="button is-link">Make My Resume</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of agreement-->
+    <script src="technical.js"></script>
+</body>
+
+</html>
